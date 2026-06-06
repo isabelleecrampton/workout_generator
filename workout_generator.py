@@ -137,7 +137,7 @@ def create_swim_workout(swim_opts):
 # MAKING IT AN APP
 
 # %%
-st.title("Workout Generator")
+st.title(" IEC Workout Generator")
 workout_type = st.selectbox("Select Workout Type", ["Swim", "Gym"])
 
 if st.button("Generate Workout"):
