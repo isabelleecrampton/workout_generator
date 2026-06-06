@@ -101,7 +101,7 @@ def create_swim_workout(swim_opts):
         level_order = ["Warmup", "Preset", "Main", "Warmdown"]
         today = date.today()
         chill = today.strftime("%A, %B %d, %Y")
-        output += f"\n{'='*5} Swim {chill} {'='*5}\n"
+        output += f"\n Swim for {chill}\n"
 
         for level in level_order:
             group = swim_workout[swim_workout["Level"] == level]
