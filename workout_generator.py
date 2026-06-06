@@ -43,7 +43,7 @@ def create_gym_workout(gym_opts):
         for level in level_order:
             group = gym_workout[gym_workout["Level"] == level]
 
-            output += f"\n{'='*10} {level.upper()} {'='*10}\n\n"
+            output += f"\n{'='*5} {level.upper()} {'='*5}\n\n"
 
             exercises = list(group.iterrows())
             mid = len(exercises) // 2
@@ -101,7 +101,7 @@ def create_swim_workout(swim_opts):
         level_order = ["Warmup", "Preset", "Main", "Warmdown"]
         today = date.today()
         chill = today.strftime("%A, %B %d, %Y")
-        output += f"\n{'='*10} Swim {chill} {'='*10}\n"
+        output += f"\n{'='*5} Swim {chill} {'='*5}\n"
 
         for level in level_order:
             group = swim_workout[swim_workout["Level"] == level]
