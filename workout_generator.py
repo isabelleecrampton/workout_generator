@@ -56,7 +56,7 @@ def create_gym_workout(gym_opts):
                 if i == mid:
                     output += f"{num_sets}x | {reps} {exercise}\n"
                 else:
-                    output += f"    | {reps} {exercise}\n"
+                    output += f"      | {reps} {exercise}\n"
             output += "      —\n"
 
         return output
