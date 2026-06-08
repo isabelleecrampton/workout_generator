@@ -122,7 +122,7 @@ def create_swim_workout(swim_opts):
                         if i == mid:
                             output += f"{rounds}x | {line}\n"
                         else:
-                            output += f" | {line}\n"
+                            output += f"   | {line}\n"
                     output += "     —\n\n"
                 else:
                     output += f"{exercise}\n"
