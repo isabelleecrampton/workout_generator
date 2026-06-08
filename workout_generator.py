@@ -54,9 +54,9 @@ def create_gym_workout(gym_opts):
                 reps = row["Reps"]
                 exercise = row["Set"]
                 if i == mid:
-                    output += f"{num_sets}x  |  {reps} {exercise}\n"
+                    output += f"{num_sets}x | {reps} {exercise}\n"
                 else:
-                    output += f"       |  {reps} {exercise}\n"
+                    output += f"   | {reps} {exercise}\n"
             output += "        —\n"
 
         return output
@@ -120,9 +120,9 @@ def create_swim_workout(swim_opts):
                     output += "        —\n"
                     for i, line in enumerate(lines):
                         if i == mid:
-                            output += f"{rounds}x  |  {line}\n"
+                            output += f"{rounds}x | {line}\n"
                         else:
-                            output += f"       |  {line}\n"
+                            output += f"  | {line}\n"
                     output += "        —\n\n"
                 else:
                     output += f"{exercise}\n"
