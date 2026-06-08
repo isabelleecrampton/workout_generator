@@ -117,13 +117,13 @@ def create_swim_workout(swim_opts):
                 mid = len(lines) // 2
 
                 if rounds != 1:
-                    output += "     —\n"
+                    output += "    —\n"
                     for i, line in enumerate(lines):
                         if i == mid:
                             output += f"{rounds}x | {line}\n"
                         else:
                             output += f"   | {line}\n"
-                    output += "     —\n\n"
+                    output += "    —\n\n"
                 else:
                     output += f"{exercise}\n"
             output += "\n"
